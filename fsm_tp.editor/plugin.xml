@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated fsm_tp -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="fsm_tp.presentation.Fsm_tpModelWizardID"
+            name="%_UI_Fsm_tpModelWizard_label"
+            class="fsm_tp.presentation.Fsm_tpModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/Fsm_tpModelFile.gif">
+         <description>%_UI_Fsm_tpModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated fsm_tp -->
+      <editor
+            id="fsm_tp.presentation.Fsm_tpEditorID"
+            name="%_UI_Fsm_tpEditor_label"
+            icon="icons/full/obj16/Fsm_tpModelFile.gif"
+            extensions="fsm_tp"
+            class="fsm_tp.presentation.Fsm_tpEditor"
+            contributorClass="fsm_tp.presentation.Fsm_tpActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>
